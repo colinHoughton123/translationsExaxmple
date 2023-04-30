@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>2.0 Translations Example </title>
-  
- 
-    <meta name="description" content="Self Needs Analysis Translations Example">
+  <title>2.1 Translations Example </title>
+  <meta name="description" content="Self Needs Analysis Translations Example">
   <meta name="keywords" content="npm, xliff, xml">
   <meta name="author" content="Colin Houghton" >
   
@@ -24,30 +22,29 @@
 
  <!-- Get the xliff package -->
   <!--   <script src="https://unpkg.com/xliff"></script>  -->
-    
-    <script src="xliff.js"></script>
-    
-    
+
+ <!-- Get the xliff.js that is in the same directory as this .html file  -->    
+<script src="xliff.js"></script>
 
 <script language="javascript" type="text/javascript">
 
 function  updateWebpage(){
    const langaugeSelected = getLanguage();
-      alert("in updateWebPage nd the language is set to " + langaugeSelected )
+
    console.log("in updateWebPage nd the language is set to " + langaugeSelected )
 
+    // ... update the web page with the translations ....
 }
 
 function  getLanguage(){
-  const languageSelected = "en"
+  const languageSelected = "en"  // later we will let the end user pick a langauge or we will get it from the browser settings
   return languageSelected
 }
 
 
-//   import Xliff from 'xliff';   // this is not needed beacuase we are getthing the xliff package from unpkg.com
-
 fetch('translations.xliff')
   .then(response => response.text())
+  .then(data => console.log(data));
   .then(xliff => {
     const xliffParser = new Xliff();
     const translations = xliffParser.parse(xliff);
@@ -57,12 +54,11 @@ fetch('translations.xliff')
 
 
 
-
 </script>
 </head>
 <body>
   <div>
-  <h1> Attempt 2.0 </h1>
+  <h1> Attempt 2.1 </h1>
       <h1 id="title"></h1>
         <p id="description"></p>
         <button id="button"></button>
