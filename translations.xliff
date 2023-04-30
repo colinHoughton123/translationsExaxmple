@@ -1,0 +1,29 @@
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="fr">
+    <unit>
+      <segment>
+        <source>Hello</source>
+        <target xml:lang="fr">Bonjour</target>
+      </segment>
+    </unit>
+    <!-- more translations for French -->
+  </file>
+  <file source-language="en" target-language="es">
+    <unit>
+      <segment>
+        <source>Hello</source>
+        <target xml:lang="es">Hola</target>
+      </segment>
+    </unit>
+    <!-- more translations for Spanish -->
+  </file>
+  <file source-language="en" target-language="de">
+    <unit>
+      <segment>
+        <source>Hello</source>
+        <target xml:lang="de">Hallo</target>
+      </segment>
+    </unit>
+    <!-- more translations for German -->
+  </file>
+</xliff>
