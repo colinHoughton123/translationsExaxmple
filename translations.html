@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>2.3 Translations Example </title>
+  <title>2.4 Translations Example </title>
   <meta name="description" content="Self Needs Analysis Translations Example">
   <meta name="keywords" content="npm, xliff, xml">
   <meta name="author" content="Colin Houghton" >
@@ -46,7 +46,7 @@ fetch('translations.xliff')
   .then(response => response.text())
   .then(data => console.log(data))
   .then(xliff => {
-    const xliffParser = new xliff();
+    const xliffParser = new Xliff();
     const translations = xliffParser.parse(xliff);
     // ... do something with the translations
     updateWebpage();
@@ -58,7 +58,7 @@ fetch('translations.xliff')
 </head>
 <body>
   <div>
-  <h1> Attempt 2.3 </h1>
+  <h1> Attempt 2.4 </h1>
       <h1 id="title"></h1>
         <p id="description"></p>
         <button id="button"></button>
